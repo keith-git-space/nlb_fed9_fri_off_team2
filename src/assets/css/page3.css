@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  background-color: #FFFFFF;
+  color: #374151;
+  transition: 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #0B0F1A;
+  color: #C7C9D3;
+}
+
+
+.navbar {
+  background-color: #A7C7E7;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #E0BBE4;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #E0BBE4;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-toggle {
+  margin-left: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #E0BBE4;
+}
+
+
+body.dark-mode .navbar {
+  background-color: #1F1B3A;
+}
+
+body.dark-mode .nav-links a {
+  color: #C7C9D3;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #FF2CDF;
+}
+
+body.dark-mode .dark-toggle {
+  background-color: #B026FF;
+  color: white;
+  box-shadow: 0 0 10px #FF2CDF;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFD1DC;
+}
+
+body.dark-mode .hero {
+  background-color: #1F1B3A;
+}
+
+
+.content-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content-section h2 {
+  margin-bottom: 15px;
+}
+
+.image-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #A7C7E7;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  body.dark-mode .nav-links {
+    background-color: #1F1B3A;
+  }
+}
