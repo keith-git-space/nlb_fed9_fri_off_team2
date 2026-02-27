@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--highlight);
+    text-shadow: 0 0 15px var(--text-main);
+}
+
+.description {
+    color: var(--text-main);
+    text-shadow: 0 0 15px var(--card-bg);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
