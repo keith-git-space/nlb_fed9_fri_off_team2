@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  background-color: #FFFFFF;
+  color: #374151;
+  transition: 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #0B0F1A;
+  color: #C7C9D3;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: #A7C7E7;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #E0BBE4;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-toggle {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #E0BBE4;
+  cursor: pointer;
+}
+
+/* ================= CONTACT HERO ================= */
+.contact-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFD1DC;
+}
+
+/* ================= FORM ================= */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: "Exo 2", sans-serif;
+}
+
+.submit-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #E0BBE4;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #d59fdc;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #C1E1C1;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ================= DARK MODE ================= */
+body.dark-mode .navbar {
+  background-color: #1F1B3A;
+}
+
+body.dark-mode .footer {
+  background-color: #1F1B3A;
+}
+
+body.dark-mode .dark-toggle {
+  background-color: #B026FF;
+  color: white;
+  box-shadow: 0 0 10px #FF2CDF;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #A7C7E7;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
