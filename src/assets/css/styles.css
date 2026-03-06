@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    /* Dark Theme Variables (Default) */
+    --bg-color: #0B0F1A;
+    --card-bg: #1F1B3A;
+    --highlight: #00E5FF;
+    --accent: #B026FF;
+    --text-main: #FFFFFF;
+    --text-muted: #C7C9D3;
+}
+
+body.light-theme {
+    /* Light Theme Variables */
+    --bg-color: #fff4b6; 
+    --card-bg: #FFD1DC;
+    --highlight: #C1E1C1;
+    --accent: #E0BBE4;
+    --text-main: #374151;
+    --text-muted: #4B5563;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global Button Style */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: var(--card-bg);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+    transition: transform 0.2s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
